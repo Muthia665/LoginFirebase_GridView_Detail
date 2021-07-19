@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#E53935">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        android:id="@+id/cardview1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/gambar"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_below="@+id/imageView"
+                android:textSize="25dp"
+                android:id="@+id/textNama"
+                android:layout_marginTop="70dp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_below="@+id/textNama"
+                android:textSize="25dp"
+                android:id="@+id/textEmail"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                android:clickable="true"
+                app:cardBackgroundColor="#B71C1C"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnSignout"
+                android:layout_below="@+id/textEmail">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:layout_centerInParent="true"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
